@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" prefHeight="800.0" prefWidth="1000.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dactilogame.Solo">
+    <children>
+      <Text fx:id="niveau_vue" strokeType="OUTSIDE" strokeWidth="0.0" text="Niveau: 1                           Mot correct : 0" wrappingWidth="332.7294921875" />
+      <Text fx:id="timer" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" wrappingWidth="158.7294921875" />
+      <Text fx:id="pv" strokeType="OUTSIDE" strokeWidth="0.0" text="Points de vie : 100" wrappingWidth="158.7294921875" />
+      <TextField fx:id="curseur" editable="false" prefHeight="77.0" prefWidth="960.0" text="Y">
+         <font>
+            <Font name="Liberation Mono" size="30.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="textVue" editable="false" prefHeight="447.0" prefWidth="960.0" promptText="Zone de texte" text="" wrapText="true">
+         <font>
+            <Font name="Liberation Mono" size="30.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="myText" alignment="CENTER" disable="true" onKeyPressed="#effacer" onKeyTyped="#key_typed" prefHeight="21.0" prefWidth="960.0" promptText="Ecrire ici">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Button fx:id="bouton_start" mnemonicParsing="false" onAction="#bouton_start_action" prefHeight="31.0" prefWidth="200.0" text="START" textFill="#a81d1d">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#goMenu" prefHeight="36.0" prefWidth="89.0" text="Exit" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
